@@ -1,14 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- tailwind and daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/c0ae3adeff.js" crossorigin="anonymous"></script>
+
+    <!-- custom styles -->
+    <style>
+        .lato-regular {
+            font-family: "Lato", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .lato-bold {
+            font-family: "Lato", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+    </style>
 </head>
 
 <body>
+    <header class="md:container md:mx-auto">
+        <nav>
+            <div class="navbar my-10 bg-[#F85559] rounded-full">
+                <div class="navbar-start">
+                    <div class="navbar-center hidden lg:flex">
+                        <ul tabindex="0" class="menu text-base menu-horizontal text-white">
+                            <li><a>Homepage</a></li>
+                            <li><a>About US</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h7" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Homepage</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>About</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar-center">
+                    <img src="images/logo.png" alt="">
+                    <a class="btn btn-ghost text-xl text-white">Fruit Burst</a>
+                </div>
+                <div class="navbar-end">
+                    <div class="form-control relative">
+                        <input type="text" placeholder="Search" class="
+                        input input-bordered w-24 md:w-auto rounded-full" />
+                        <i class=" absolute top-4 right-4 fa-solid fa-magnifying-glass"></i>
+                    </div>
 
+                </div>
+            </div>
+        </nav>
+        <!-- slider or carousel -->
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full ">
+                <div class="bg-no-repeat bg-[url('images/banner1.png')] w-full">
+                    <div class="text-center">
+                        <h1>Exotic tastes at your doorstep</h1>
+                        <p>We supply highly quality organic products</p>
+                        <button>Shop Now</button>
+                    </div>
+                    <!-- <img src="images/banner1.png" class="w-full" /> -->
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="images/banner2.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="images/banner3.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+                <img src="images/banner4.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 
 </html>
